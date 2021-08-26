@@ -24,5 +24,11 @@ listaCognomi.sort();
 let posizione = (listaCognomi.indexOf(mioCognome)) + 1;
 
 //stampo la lista e la posizione
+for(var i = 0; i < listaCognomi.length; i++){
+    document.getElementById("lista-cognomi").innerHTML += "<li>" + listaCognomi[i] + "</li>";
+}
+
+document.getElementById("posizione").innerHTML = "La posizione del cognome scelto dall'utente è: " + posizione;
+
 console.log(listaCognomi);
 console.log(posizione);
